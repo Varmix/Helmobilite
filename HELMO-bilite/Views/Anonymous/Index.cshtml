@@ -1,0 +1,132 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model HELMO_bilite.Models.ViewModels.HelmoBiliteViewModel
+
+<div class="container-fluid bg-image p-0 mb-4"
+     style="background-image: url('@Url.Content("~/mylib/bg/main-bg.jpg")'); height: 65vh; background-repeat: no-repeat; background-position: bottom center; background-size: cover;"
+     xmlns="http://www.w3.org/1999/html">
+    <div class="row h-100">
+        <div class="col-xl-6 h-100 d-flex justify-content-center align-items-center flex-column">
+            <h1 class="custom-header-size text-warning mb-2">HELMO-BILITÉ</h1>
+        </div>
+        <div class="col-xl-6 h-100 position-relative d-xl-block d-none">
+            <img src=@Url.Content("~/mylib/bg/trucks.png") class="img-fluid position-absolute bottom-0" alt="TRUCK">
+        </div>
+    </div>
+</div>
+
+<hr class="bg-warning my-5">
+<!-- SAVOIR-FAIRE -->
+<div class="d-flex p-5" style="height: 60vh;">
+    <div class="col-xl-5 d-none d-md-flex justify-content-center align-items-center">
+        <img src=@Url.Content("~/mylib/bg/trucks.png") alt="TRUCKS" style="max-width: 100%; height: auto; vertical-align: middle;">
+    </div>
+
+    <div class="col-xl-7 d-flex justify-content-center align-items-center flex-column">
+        <h2 class="text-warning fw-bold mb-5">NOTRE SAVOIR-FAIRE</h2>
+        <p class="w-75"><span class="fw-bold">Chez HELMo-bilité</span>, nous sommes fiers de l'expertise de qualité que l'on a pu acquérir à travers le temps. Notre équipe de professionnels hautement qualifiés se tient à votre disposition pour vous offrir des solutions de transport adaptées à vos besoins. Grâce à une combinaison unique de compétences techniques et logistiques, nous garantissons un service de qualité, sûr et rapide. Nous mettons en avant la formation de nos équipes aux dernières avancées technologiques et règlemntaires du secteur, afin d'assurer un service irréprochable auprès de nos clients.</p>
+    </div>
+</div>
+
+
+<hr class="bg-warning my-5">
+<!-- FLOTTE -->
+<div class="row pe-3">
+    <!-- Texte flotte -->
+    <div class="container-fluid col-12 col-xl-6 p-3 d-flex align-items-center justify-content-around flex-column">
+        <h2 class="text-warning fw-bold text-center">NOTRE FLOTTE</h2>
+        <p class="w-75 text-start"><span class="fw-bold">Notre flotte</span> est composée de camions diverses, offrant une large de gamme de capacités et adaptée au divers besoins de nos clients. Nos véhicules requièrent des permis C OU CE. Chez HELMo-bilité, nous avons établi des contrats avec des garages locaux, qui emploient des étudiants pour assurer l'entretient et la maintenance de la flotte. Ces collaborations permettent non seulement de garantir que nos camions sont toujours en parfait état de fonctionnement, mais aussi offrir aux étudiants une expérience professionnelle en travaillant sur des camions composés chacun d'une mécanique différente. </p>
+    </div>
+    <!-- Carousel -->
+    <div class="container-fluid w-50 col-12 col-xl-6">
+        <div class="carousel-container">
+            <div id="fleet-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    @foreach (var truck in Model.Trucks)
+                    {
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 @(truck == Model.Trucks.First() ? "active" : "")">
+                            <div class="card">
+                                <div class="carousel-img-container" style="height: 250px;">
+                                    <img src="@Url.Content(truck.PictureTruckPath)" class="card-img-top" alt="truck one" style="object-fit: contain">
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center text-center" style="background: white">
+                                    <h4 class="card-title mb-0 w-100">@Html.DisplayFor(modelItem => truck.Brand) @Html.DisplayFor(modelItem => truck.Model)</h4>
+                                    <div class="d-flex justify-content-around mt-4 w-25">
+                                        <p>
+                                            <i class="fa-solid fa-id-card"></i> @Html.DisplayFor(modelItem => truck.RequiredDrivingLiscence)
+                                        </p>
+                                        <p>
+                                            <i class="fa-solid fa-weight-scale"></i> @Html.DisplayFor(modelItem => truck.MaximumTonnage)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#fleet-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#fleet-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="bg-warning my-5">
+<!-- NOTRE EQUIPE -->
+<h2 class="text-warning fw-bold text-center mt-5">NOTRE ÉQUIPE</h2>
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center p-5">
+        <div id="team-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                @for (int i = 0; i < Model.MemberPersons.Count; i += 3)
+                {
+                    <div class="carousel-item @(i == 0 ? "active" : "")">
+                        <div class="row">
+                            @foreach (var member in Model.MemberPersons.Skip(i).Take(3))
+                            {
+                                <div class="col-md-4">
+                                    <div class="card border-0 rounded-3 shadow-2-strong mb-4 d-flex flex-column align-items-center">
+                                        <img src="@Url.Content(@member.PicturePath)" class="card-img-top" alt="Photo de profil" style="width: 100px; height: 100px; object-fit: cover">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center fw-bold">@Html.DisplayFor(modelItem => member.LastName) @Html.DisplayFor(modelItem => member.FirstName)</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#team-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#team-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+        </div>
+    </div>
+</div>
+<hr class="bg-warning my-5">
+
+<h2 class="text-warning fw-bold text-center">NOS CLIENTS</h2>
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center p-5">
+        @foreach (var client in Model.Clients)
+        {
+            <div class="col-xl-2 col-md-3 mb-4 rounded-lg p-5">
+                <div class="card border-0 rounded-3 shadow-2-strong align-items-center">
+                    <img src="@Url.Content(client.PicturePath)" class="card-img-top gray-filter" alt="Photo de profil" style="width: 150px; height: 150px; object-fit: contain;">
+                </div>
+            </div>
+        }
+    </div>
+</div>

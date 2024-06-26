@@ -1,0 +1,132 @@
+@using Microsoft.AspNetCore.Http
+@using Microsoft.Extensions.DependencyInjection;
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+@inject IHttpContextAccessor HttpContextAccessor
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - HELMO_bilite</title>
+    <link rel="stylesheet" href="~/css/all.min.css"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true"/>
+</head>
+
+<body>
+<header class="header-height">
+    <nav class="navbar navbar-expand navbar-light bg-white border-bottom box-shadow fixed-top">
+        <div class="container-fluid ms-auto text-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="~/mylib/other/logo.png" alt="" style="width: 50px; height: 25px">
+                <a class="navbar-brand text-warning fw-bold m-0" asp-area="" asp-controller="Anonymous" asp-action="Index">HELMO-BILITÉ</a>
+            </div>
+            
+            <div id="navbarContent" class="w-100 justify-content-end">
+               <div class="d-flex flex-wrap justify-content-end align-items-center ms-2 w-100 me-5">
+                    @if (User.IsInRole("Client"))
+                    {
+                        <a class="me-5 btn btn-warning fw-bold" asp-area="" asp-controller="Client" asp-action="CreateDelivery">Encoder livraison</a>
+                        <a class="me-5 btn btn-warning fw-bold" asp-area="" asp-controller="Client" asp-action="ShowDeliveries" asp-route-status="waiting">Livraison en attente</a>
+                        <a class="me-5 btn btn-warning fw-bold" asp-area="" asp-controller="Client" asp-action="ShowDeliveries" asp-route-status="inProgress">Livraison en cours</a>
+                        <a class="me-5 btn btn-warning fw-bold" asp-area="" asp-controller="Client" asp-action="ShowDeliveries" asp-route-status="finished">Historique des livraisons</a>
+                    }
+
+                    @if (User.IsInRole("TruckDriver"))
+                    {
+                        <a class="me-5 btn btn-warning fw-bold" asp-area="" asp-controller="TruckDriver" asp-action="Index">Mes livraisons</a>
+                    }
+                    
+                     @if (User.IsInRole("Dispatcher"))
+                    {
+                        <a class="me-5 btn btn-warning fw-bold" asp-area="" asp-controller="Dispatcher" asp-action="Index">Assigner les livraisons</a>
+                    }
+                    
+                    @if (User.IsInRole("Admin"))
+                   {
+                       <a class="me-5 btn btn-warning fw-bold" asp-area="" asp-controller="Admin" asp-action="CrudDrivingLicences">Gérer pemis</a>
+                       <a class="me-5 btn btn-warning fw-bold" asp-area="" asp-controller="Admin" asp-action="ShowAllClients" asp-route-status="waiting">Gérer clients</a>
+                       <a class="me-5 btn btn-warning fw-bold" asp-area="" asp-controller="Truck" asp-action="Index" asp-route-status="waiting">Gérer flotte</a>
+                       <a class="me-5 btn btn-warning fw-bold" asp-area="" asp-controller="Admin" asp-action="ShowStatistics" asp-route-status="waiting">Statistiques</a>
+                   }
+                </div>
+            </div>
+            <div class="navbar-collapse collapse justify-content-end me-3">
+                @if (SignInManager.IsSignedIn((User)))
+                {
+                    if (User.Identity?.IsAuthenticated ?? false)
+                    {
+                        <div id="profileBtn" style="cursor: pointer;" class="d-flex justify-content-center align-items-center flex-column">
+                            <img src="@Url.Action("GetProfileImage", "User")" alt="" style="width: 35px; height: 35px; border-radius: 25px; object-fit: cover">
+                            <p class="m-0 text-dark fw-bold">@UserManager.GetUserName(User)</p>
+                        </div>
+                                    
+                    }
+                }
+                else
+                {
+                    <a class="me-5 btn btn-warning fw-bold d-flex align-items-center" asp-area="Identity" asp-page="/Account/Login"><i class="fa-solid fa-user"></i> Connexion</a>
+                    <a class="me-5 btn btn-warning fw-bold d-flex align-items-center" id="registerBtn" href="#"><i class="fa-solid fa-user-plus"></i> Inscription</a>
+
+                }
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div id="popupRole" class="popup">
+    <div class="d-flex justify-content-end mb-3">
+        <p id="closePopupRole" style="cursor: pointer;"><i class="fa-solid fa-xmark fa-beat fa-2x" style="color: #ff0000;"></i></p>
+    </div>
+
+    <h3 class="text-warning mb-5">Sélectionnez votre rôle</h3>
+    <ul class="d-flex justify-content-center align-items-center w-100 list-unstyled flex-column">
+        <li class="custom-width-role"><a asp-area="Identity" asp-page="/Account/RegisterCompany" class="btn btn-warning fw-bold w-100">Client</a></li>
+        <li class="custom-width-role"><a asp-area="Identity" asp-page="/Account/RegisterHelmoMember" class="btn btn-warning fw-bold w-100">Membre HELMo</a></li>
+    </ul>
+</div>
+
+<div id="popupProfile" class="popup">
+    <div class="d-flex justify-content-end mb-3">
+        <p id="closePopupProfile" style="cursor: pointer;">
+            <i class="fa-solid fa-xmark fa-beat fa-2x" style="color: #ff0000;"></i>
+        </p>
+    </div>
+    <h3 class="text-warning mb-5 text-center">Menu de profil</h3>
+    <ul class="d-flex align-items-center w-300 list-unstyled flex-column">
+        @if (User.IsInRole("Client"))
+        {
+            <li class="mb-1" style="width: 60%">
+                <a id="manage" class="btn btn-warning fw-bold w-100" asp-area="Identity" asp-page="/Account/Manage/Email" title="Modifier votre profil">Modifier</a>
+            </li>
+        }
+        @if (User.IsInRole("Dispatcher") || User.IsInRole("TruckDriver"))
+        {
+            <li class="mb-1" style="width: 60%">
+                <a id="manage" class="btn btn-warning fw-bold w-100" asp-area="Identity" asp-page="/Account/Manage/EditMemberHelmo" title="Modifier votre profil">Modifier</a>
+            </li>
+        }
+        @if (User.Identity?.IsAuthenticated ?? false)
+        {
+            <li style="width : 60%">
+                <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })" method="post">
+                    <button class="btn btn-warning fw-bold w-100" type="submit"><i class="fa-solid fa-arrow-right-from-bracket"></i>Se déconnecter</button>
+                </form>
+            </li>
+        }
+    </ul>
+</div>
+<div class="page-container">
+<main role="main" class="container-fluid p-0">
+    @RenderBody()
+</main>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="~/js/site.min.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

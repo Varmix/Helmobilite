@@ -1,0 +1,625 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\HELMO-bilite.bundle.scp.css",
+      "PackagePath": "staticwebassets\\HELMO-bilite.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\css\\all.css",
+      "PackagePath": "staticwebassets\\css\\all.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\css\\site.min.css",
+      "PackagePath": "staticwebassets\\css\\site.min.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\images\\clientThree@gmail.com_638217207667486473_node_js.png",
+      "PackagePath": "staticwebassets\\images\\clientThree@gmail.com_638217207667486473_node_js.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\bg\\main-bg.jpg",
+      "PackagePath": "staticwebassets\\imgs\\bg\\main-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\bg\\trucks.png",
+      "PackagePath": "staticwebassets\\imgs\\bg\\trucks.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\company\\Adidas.png",
+      "PackagePath": "staticwebassets\\imgs\\company\\Adidas.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\company\\Cisco.png",
+      "PackagePath": "staticwebassets\\imgs\\company\\Cisco.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\company\\Nike.png",
+      "PackagePath": "staticwebassets\\imgs\\company\\Nike.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\company\\lacoste.png",
+      "PackagePath": "staticwebassets\\imgs\\company\\lacoste.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\company\\logo_joskin_small.png",
+      "PackagePath": "staticwebassets\\imgs\\company\\logo_joskin_small.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\other\\JOP.gif",
+      "PackagePath": "staticwebassets\\imgs\\other\\JOP.gif"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\other\\delivery.gif",
+      "PackagePath": "staticwebassets\\imgs\\other\\delivery.gif"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\other\\logo.png",
+      "PackagePath": "staticwebassets\\imgs\\other\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\other\\profile.png",
+      "PackagePath": "staticwebassets\\imgs\\other\\profile.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\other\\truck.png",
+      "PackagePath": "staticwebassets\\imgs\\other\\truck.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\truckDriver\\driver1.png",
+      "PackagePath": "staticwebassets\\imgs\\truckDriver\\driver1.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\truckDriver\\driver10.png",
+      "PackagePath": "staticwebassets\\imgs\\truckDriver\\driver10.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\truckDriver\\driver2.png",
+      "PackagePath": "staticwebassets\\imgs\\truckDriver\\driver2.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\truckDriver\\driver3.png",
+      "PackagePath": "staticwebassets\\imgs\\truckDriver\\driver3.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\truckDriver\\driver4.png",
+      "PackagePath": "staticwebassets\\imgs\\truckDriver\\driver4.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\truckDriver\\driver5.png",
+      "PackagePath": "staticwebassets\\imgs\\truckDriver\\driver5.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\truckDriver\\driver6.png",
+      "PackagePath": "staticwebassets\\imgs\\truckDriver\\driver6.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\truckDriver\\driver7.png",
+      "PackagePath": "staticwebassets\\imgs\\truckDriver\\driver7.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\truckDriver\\driver8.png",
+      "PackagePath": "staticwebassets\\imgs\\truckDriver\\driver8.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\truckDriver\\driver9.png",
+      "PackagePath": "staticwebassets\\imgs\\truckDriver\\driver9.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\trucks\\daf.png",
+      "PackagePath": "staticwebassets\\imgs\\trucks\\daf.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\trucks\\default-truck.png",
+      "PackagePath": "staticwebassets\\imgs\\trucks\\default-truck.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\trucks\\iveco.png",
+      "PackagePath": "staticwebassets\\imgs\\trucks\\iveco.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\trucks\\kenworth.png",
+      "PackagePath": "staticwebassets\\imgs\\trucks\\kenworth.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\trucks\\mack.png",
+      "PackagePath": "staticwebassets\\imgs\\trucks\\mack.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\trucks\\man.png",
+      "PackagePath": "staticwebassets\\imgs\\trucks\\man.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\trucks\\mercedes.png",
+      "PackagePath": "staticwebassets\\imgs\\trucks\\mercedes.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\trucks\\peterbilt.png",
+      "PackagePath": "staticwebassets\\imgs\\trucks\\peterbilt.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\trucks\\renault.png",
+      "PackagePath": "staticwebassets\\imgs\\trucks\\renault.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\trucks\\scania.png",
+      "PackagePath": "staticwebassets\\imgs\\trucks\\scania.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\trucks\\truck-1.png",
+      "PackagePath": "staticwebassets\\imgs\\trucks\\truck-1.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\trucks\\truck-2.png",
+      "PackagePath": "staticwebassets\\imgs\\trucks\\truck-2.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\imgs\\trucks\\volvo.png",
+      "PackagePath": "staticwebassets\\imgs\\trucks\\volvo.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\js\\site.min.js",
+      "PackagePath": "staticwebassets\\js\\site.min.js"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\all.css",
+      "PackagePath": "staticwebassets\\mylib\\all.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\all.min.css",
+      "PackagePath": "staticwebassets\\mylib\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\bg\\main-bg.jpg",
+      "PackagePath": "staticwebassets\\mylib\\bg\\main-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\bg\\trucks.png",
+      "PackagePath": "staticwebassets\\mylib\\bg\\trucks.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\clientThree@gmail.com_638217207667486473_node_js.png",
+      "PackagePath": "staticwebassets\\mylib\\clientThree@gmail.com_638217207667486473_node_js.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\company\\Adidas.png",
+      "PackagePath": "staticwebassets\\mylib\\company\\Adidas.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\company\\Cisco.png",
+      "PackagePath": "staticwebassets\\mylib\\company\\Cisco.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\company\\Nike.png",
+      "PackagePath": "staticwebassets\\mylib\\company\\Nike.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\company\\lacoste.png",
+      "PackagePath": "staticwebassets\\mylib\\company\\lacoste.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\company\\logo_joskin_small.png",
+      "PackagePath": "staticwebassets\\mylib\\company\\logo_joskin_small.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\other\\JOP.gif",
+      "PackagePath": "staticwebassets\\mylib\\other\\JOP.gif"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\other\\delivery.gif",
+      "PackagePath": "staticwebassets\\mylib\\other\\delivery.gif"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\other\\logo.png",
+      "PackagePath": "staticwebassets\\mylib\\other\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\other\\profile.png",
+      "PackagePath": "staticwebassets\\mylib\\other\\profile.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\other\\truck.png",
+      "PackagePath": "staticwebassets\\mylib\\other\\truck.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\site.css",
+      "PackagePath": "staticwebassets\\mylib\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\site.js",
+      "PackagePath": "staticwebassets\\mylib\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\site.min.css",
+      "PackagePath": "staticwebassets\\mylib\\site.min.css"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\site.min.js",
+      "PackagePath": "staticwebassets\\mylib\\site.min.js"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\truckDriver\\driver1.png",
+      "PackagePath": "staticwebassets\\mylib\\truckDriver\\driver1.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\truckDriver\\driver10.png",
+      "PackagePath": "staticwebassets\\mylib\\truckDriver\\driver10.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\truckDriver\\driver2.png",
+      "PackagePath": "staticwebassets\\mylib\\truckDriver\\driver2.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\truckDriver\\driver3.png",
+      "PackagePath": "staticwebassets\\mylib\\truckDriver\\driver3.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\truckDriver\\driver4.png",
+      "PackagePath": "staticwebassets\\mylib\\truckDriver\\driver4.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\truckDriver\\driver5.png",
+      "PackagePath": "staticwebassets\\mylib\\truckDriver\\driver5.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\truckDriver\\driver6.png",
+      "PackagePath": "staticwebassets\\mylib\\truckDriver\\driver6.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\truckDriver\\driver7.png",
+      "PackagePath": "staticwebassets\\mylib\\truckDriver\\driver7.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\truckDriver\\driver8.png",
+      "PackagePath": "staticwebassets\\mylib\\truckDriver\\driver8.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\truckDriver\\driver9.png",
+      "PackagePath": "staticwebassets\\mylib\\truckDriver\\driver9.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\trucks\\daf.png",
+      "PackagePath": "staticwebassets\\mylib\\trucks\\daf.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\trucks\\default-truck.png",
+      "PackagePath": "staticwebassets\\mylib\\trucks\\default-truck.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\trucks\\iveco.png",
+      "PackagePath": "staticwebassets\\mylib\\trucks\\iveco.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\trucks\\kenworth.png",
+      "PackagePath": "staticwebassets\\mylib\\trucks\\kenworth.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\trucks\\mack.png",
+      "PackagePath": "staticwebassets\\mylib\\trucks\\mack.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\trucks\\man.png",
+      "PackagePath": "staticwebassets\\mylib\\trucks\\man.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\trucks\\mercedes.png",
+      "PackagePath": "staticwebassets\\mylib\\trucks\\mercedes.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\trucks\\peterbilt.png",
+      "PackagePath": "staticwebassets\\mylib\\trucks\\peterbilt.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\trucks\\renault.png",
+      "PackagePath": "staticwebassets\\mylib\\trucks\\renault.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\trucks\\scania.png",
+      "PackagePath": "staticwebassets\\mylib\\trucks\\scania.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\trucks\\truck-1.png",
+      "PackagePath": "staticwebassets\\mylib\\trucks\\truck-1.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\trucks\\truck-2.png",
+      "PackagePath": "staticwebassets\\mylib\\trucks\\truck-2.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\mylib\\trucks\\volvo.png",
+      "PackagePath": "staticwebassets\\mylib\\trucks\\volvo.png"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "C:\\Users\\varmi\\Desktop\\Helmo\\Bloc 2\\Développement web avancé\\projet\\HELMo-Bilite\\HELMO-bilite\\wwwroot\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.HELMO-bilite.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.HELMO-bilite.props",
+      "PackagePath": "build\\HELMO-bilite.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.HELMO-bilite.props",
+      "PackagePath": "buildMultiTargeting\\HELMO-bilite.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.HELMO-bilite.props",
+      "PackagePath": "buildTransitive\\HELMO-bilite.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,7 @@
+﻿@{
+    var profileImageUrl = ViewBag.ProfileImageUrl ?? "salut";
+}
+<p>@profileImageUrl</p>
+<img src="@Url.Content(profileImageUrl)" alt="profile-image" style="width: 35px; height: 35px; border-radius: 25px;">
+
+

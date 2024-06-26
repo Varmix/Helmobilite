@@ -1,0 +1,87 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model EditClientModel
+@{
+    ViewData["Title"] = "Modifier votre profil";
+    ViewData["ActivePage"] = ManageNavPages.Email;
+}
+<div class="h-500 vw-50 d-flex justify-content-center align-items-center flex-column mb-3">
+    <div class="form-shadow rounded" style="width: 80%">
+        <h3 class="text-center">@ViewData["Title"]</h3>
+        <partial name="_StatusMessage" for="StatusMessage"/>
+
+        <div class="w-100 d-flex justify-content-center align-items-center flex-column">
+            <form id="email-form" method="post" enctype="multipart/form-data" class="w-75 mb-2">
+                @* <div class="form-floating"> *@
+                @*     <input asp-for="Email" class="form-control" disabled/> *@
+                @*     <label asp-for="Email" class="form-label"></label> *@
+                @*     $1$ <button id="email-verification" type="submit" asp-page-handler="SendVerificationEmail" class="btn btn-link">Envoi d'un mail de vérification</button> #1# *@
+                @* </div> *@
+                <div class="mb-5 d-flex flex-column justify-content-center align-items-center">
+                    <div class="form-group mb-5">
+                        <img id="previewImage" src="@Url.Content(Model.Input.PictureUrl)" alt="Aperçu de l'image" style="width:250px; height: 250px; border-radius: 50%; object-fit:cover;">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputFile" role="button">
+                            <i class="fa-solid fa-pen fa-1.5x"></i>
+                        </label>
+                        <input asp-for="Input.UploadedPicture" type="file" class="form-control-file d-none" id="inputFile" accept="image/*">
+                    </div>
+                </div>
+                <div class="form-group mb-5">
+                    <label asp-for="Email" class="form-label fw-bold" disabled><i class="fa-solid fa-envelope"></i> Adresse email</label>
+                    <input asp-for="Email" type="email" class="input-border form-control" aria-required="true" disabled/>
+                </div>
+                <legend class="float-none w-auto text-warning fw-bold">Informations de l'entreprise</legend>
+                <div class="form-group mb-5">
+                    <label asp-for="Input.NumberCompany" class="form-label fw-bold"><i class="fa-solid fa-id-card"></i> Numéro d'entreprise</label>
+                    <input asp-for="Input.NumberCompany" type="text" class="input-border form-control" placeholder="0123456789" required value="@Model.Input.NumberCompany">
+                </div>
+
+                <div class="form-group mb-5">
+                    <label asp-for="Input.CompanyName" class="form-label fw-bold"><i class="fa-solid fa-building"></i> Nom de l'entreprise</label>
+                    <input asp-for="Input.CompanyName" type="text" class="input-border form-control" placeholder="S.A.R.L Truck" required value="@Model.Input.CompanyName">
+                </div>
+
+                <div class="form-group mb-5">
+                    <label asp-for="Input.Country" class="form-label fw-bold"><i class="fa-solid fa-flag"></i> Pays</label>
+                    <input asp-for="Input.Country" type="text" class="input-border form-control" placeholder="Belgique" required value="@Model.Input.Country">
+                </div>
+
+
+                <div class="d-xxl-flex justify-content-between align-items-center">
+                    <div class="form-group mb-5" style="width: 40%">
+                        <label asp-for="Input.Number" class="form-label fw-bold"><i class="fa-solid fa-home"></i> Numéro de rue</label>
+                        <input asp-for="Input.Number" type="text" class="input-border form-control" placeholder="35" required value="@Model.Input.Number">
+                    </div>
+
+
+                    <div class="form-group mb-5" style="width: 40%">
+                        <label asp-for="Input.Street" class="form-label fw-bold"><i class="fa-solid fa-road"></i> Rue</label>
+                        <input asp-for="Input.Street" type="text" class="input-border form-control" placeholder="Rue de Harlez" required value="@Model.Input.Street">
+                    </div>
+
+                </div>
+
+                <div class="d-xxl-flex justify-content-between align-items-center">
+                    <div class="form-group mb-5" style="width: 40%">
+                        <label asp-for="Input.PostalCode" class="form-label fw-bold"><i class="fa-solid fa-map-marker"></i> Code postal</label>
+                        <input asp-for="Input.PostalCode" type="number" class="input-border form-control" placeholder="4000" required value="@Model.Input.PostalCode">
+                        <span asp-validation-for="Input.PostalCode" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-5" style="width: 40%">
+                        <label asp-for="Input.Locality" class="form-label fw-bold"><i class="fa-solid fa-city"></i> Ville</label>
+                        <input asp-for="Input.Locality" type="text" class="input-border form-control" placeholder="Liège" required value="@Model.Input.Locality">
+                    </div>
+                </div>
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <button id="change-email-button" type="submit" asp-page-handler="ChangeEmail" class="w-100 btn btn-lg btn-warning fw-bold">Modifier</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"/>
+}
