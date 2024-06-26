@@ -1,0 +1,133 @@
+﻿@page
+@model HELMO_bilite.Areas.Identity.Pages.Account.RegisterDispatcher
+<h1>@ViewData["Title"]</h1>
+
+<div class="h-500 vw-100 d-flex justify-content-center align-items-center flex-column mb-3">
+    <div class="w-50 form-shadow rounded">
+        <h2 class="m-5 text-center text-warning fw-bold">Inscrpition en tant que <span id="roleMember" class="bold">@(Model.Input != null && Model.Input.PermisB == true ? "dispatcher" : "chauffeur")</span></h2>
+
+        <div class="w-100 d-flex justify-content-center align-items-center flex-column">
+            <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="w-75 mb-2">
+                <div class="form-group mb-5">
+                    <label asp-for="Input.Email" class="form-label fw-bold"><i class="fa-solid fa-envelope"></i> Adresse email</label>
+                    <input asp-for="Input.Email" type="email" class="input-border form-control" aria-describedby="emailHelp" placeholder="john.doe@gmail.com" autocomplete="username" aria-required="true"/>
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="w-100 d-xxl-flex justify-content-between align-items-center">
+                    <div class="form-group mb-5" style="width: 40%">
+                        <label asp-for="Input.Password" class="form-label fw-bold"><i class="fa-solid fa-key"></i> Mot de passe</label>
+                        <input asp-for="Input.Password" type="password" class="input-border form-control" autocomplete="new-password" placeholder="●●●●●●●●●●●●" aria-required="true"/>
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-5" style="width: 40%">
+                        <label asp-for="Input.ConfirmPassword" class="form-label fw-bold"><i class="fa-solid fa-key"></i> Confirmer mot de passe</label>
+                        <input asp-for="Input.ConfirmPassword" type="password" class="input-border form-control" autocomplete="new-password" placeholder="●●●●●●●●●●●●" aria-required="true"/>
+                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                    </div>
+                </div>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                
+                
+                <!--DEBUT DE LA PARTIE PROPRE A HELMO MEMBER-->
+                <legend class="float-none w-auto text-warning fw-bold">Informations personnelles</legend>
+                <div class="w-100 d-xxl-flex justify-content-between align-items-center">
+                    <div class="form-group mb-5">
+                        <label asp-for="Input.LastName" class="form-label fw-bold"><i class="fas fa-user"></i> Nom</label>
+                        <input asp-for="Input.LastName" type="text" class="input-border form-control" placeholder="John" required>
+                         <span asp-validation-for="Input.LastName" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="form-group mb-5">
+                        <label asp-for="Input.FirstName" class="form-label fw-bold"><i class="fas fa-user"></i> Prénom</label>
+                        <input asp-for="Input.FirstName" type="text" class="input-border form-control" placeholder="Doe" required>
+                        <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+                    </div>
+                </div>
+                
+                <div class="form-group mb-5">
+                    <label asp-for="Input.Matricule" class="form-label fw-bold"><i class="fas fa-barcode"></i> Matricule</label>
+                    <input asp-for="Input.Matricule" type="text" class="input-border form-control" placeholder="Q210208" required>
+                    <span asp-validation-for="Input.Matricule" class="text-danger"></span>
+                </div>
+
+               <div class="form-group mb-5">
+                   <label class="form-label fw-bold"><i class="fas fa-id-card"></i> Type de permis</label>
+                   <div class="d-xxl-flex">
+                       <div class="me-3">
+                           <label class="form-check-label" asp-for="Input.PermisB">
+                               @if (Model.Input != null && Model?.Input.PermisB == true)
+                               {
+                                   <input asp-for="Input.PermisB" class="form-check-input" type="checkbox" id="permisB" checked> 
+                               }
+                               else
+                               {
+                                   <input asp-for="Input.PermisB" class="form-check-input" type="checkbox" id="permisB"> 
+                               }
+                               Permis B
+                           </label>
+                       </div>
+               
+                       <div class="me-3">
+                           <label class="form-check-label" asp-for="Input.PermisC">
+                                 @if (Model.Input != null && Model.Input.PermisC == true)
+                                 {
+                                     <input asp-for="Input.PermisC" class="form-check-input" type="checkbox" id="permisC" checked> 
+                                 }
+                                 else
+                                 {
+                                     <input asp-for="Input.PermisC" class="form-check-input" type="checkbox" id="permisC"> 
+                                 }
+                                 Permis C (Camion)
+                           </label>
+                       </div>
+                       
+                       <div>
+                           <label class="form-check-label" asp-for="Input.PermisCE">
+                                 @if (Model.Input != null && Model.Input.PermisCE == true)
+                                 {
+                                     <input asp-for="Input.PermisCE" class="form-check-input" type="checkbox" id="permisCE" checked>
+                                 }
+                                 else
+                                 {
+                                     <input asp-for="Input.PermisCE" class="form-check-input" type="checkbox" id="permisCE">
+                                 }
+                              Permis CE (Camion avec Remorque)
+                           </label>
+                       </div>
+                   </div>
+                   <span asp-validation-for="Input.PermisB" class="text-danger fw-bold"></span>
+               </div>
+                
+                
+                <div id="levelOfStudy" @(Model.Input != null && Model.Input.PermisB == true ? "" : "style=display:none")>
+                    <legend class="float-none w-auto text-warning fw-bold">Niveau d'étude maximum effectué</legend>
+                    <div class="form-group mb-5">
+                        <div class="btn-group-toggle d-xxl-flex" data-toggle="buttons">
+                            <label class="me-3" asp-for="Input.LevelOfStudy">
+                                <input type="radio"  asp-for="Input.LevelOfStudy" value="CESS" autocomplete="off"> CESS
+                            </label>
+                            <label class="me-3" asp-for="Input.LevelOfStudy">
+                                <input type="radio" asp-for="Input.LevelOfStudy" value="Bachelier" autocomplete="off"> Bachelier
+                            </label>
+                            <label class="me-3" asp-for="Input.LevelOfStudy">
+                                <input type="radio" asp-for="Input.LevelOfStudy" value="Licencier" autocomplete="off"> Licencier
+                            </label>
+                        </div>
+                    </div>
+                    <span asp-validation-for="Input.LevelOfStudy" class="text-danger fw-bold"></span>
+                </div>
+                <!--FIN DE LA PARTIE PROPRE A LA HELMO MEMBER-->
+                
+                
+                <div class="d-flex justify-content-center align-items-center mb-3">
+                    <button id="registerSubmit" type="submit" class="btn btn-warning fw-bold">S'inscrire</button>
+                </div>
+            </form>
+            <!-- Gestion des erreurs pour les informations client -->
+            <span class="text-danger fw-bold mb-3">@ViewData["ErrorLogin"]</span>
+        </div>
+    </div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}</div>

@@ -1,0 +1,89 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model EditMemberHelmoModel
+@{
+    ViewData["Title"] = "Modifier votre profil";
+    ViewData["ActivePage"] = ManageNavPages.Email;
+}
+
+<div class="h-500 vw-50 d-flex justify-content-center align-items-center flex-column mb-3">
+    <div class="form-shadow rounded" style="width: 80%">
+        <h3 class="text-center">@ViewData["Title"]</h3>
+        <partial name="_StatusMessage" for="StatusMessage"/>
+
+        <div class="w-100 d-flex justify-content-center align-items-center flex-column">
+            <form id="email-form" method="post" enctype="multipart/form-data" class="w-75 mb-2">
+                <div class="mb-5 d-flex flex-column justify-content-center align-items-center">
+                    <div class="form-group mb-5">
+                        <img id="previewImage" src="@Url.Content(Model.Input.PictureUrl)" alt="Aperçu de l'image" style="width:250px; height: 250px; border-radius: 50%; object-fit: cover;">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputFile" role="button">
+                            <i class="fa-solid fa-pen fa-1.5x"></i>
+                        </label>
+                        <input asp-for="Input.UploadedPicture" type="file" class="form-control-file d-none" id="inputFile" accept="image/*" value="">
+                    </div>
+                </div>
+                <div class="form-group mb-5">
+                    <label asp-for="Email" class="form-label fw-bold" disabled><i class="fa-solid fa-envelope"></i> Adresse email</label>
+                    <input asp-for="Email" type="email" class="input-border form-control" aria-required="true" disabled/>
+                </div>
+
+                <legend class="float-none w-auto text-warning fw-bold">Informations personnelles</legend>
+                <div class="w-100 d-xxl-flex justify-content-between align-items-center">
+                    <div class="form-group mb-5" style="width: 40%">
+                        <label asp-for="Input.LastName" class="form-label fw-bold"><i class="fas fa-user"></i> Nom</label>
+                        <input asp-for="Input.LastName" type="text" class="input-border form-control" placeholder="John" required>
+                        <span asp-validation-for="Input.LastName" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-5" style="width: 40%">
+                        <label asp-for="Input.FirstName" class="form-label fw-bold"><i class="fas fa-user"></i> Prénom</label>
+                        <input asp-for="Input.FirstName" type="text" class="input-border form-control" placeholder="Doe" required>
+                        <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group mb-5">
+                    <label asp-for="Input.Matricule" class="form-label fw-bold"><i class="fas fa-barcode"></i> Matricule</label>
+                    <input asp-for="Input.Matricule" type="text" class="input-border form-control" placeholder="Q210208" required>
+                    <span asp-validation-for="Input.Matricule" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-5">
+                    <label asp-for="Input.DrivingLicence" class="form-label fw-bold"><i class="fa-solid fa-id-card"></i> Type de permis</label>
+                    <input asp-for="Input.DrivingLicence" type="text" class="input-border form-control" placeholder="Q210208" required disabled>
+                </div>
+
+                <div class="form-group mb-5">
+                    <label asp-for="Input.BirthDate" class="form-label fw-bold"><i class="fas fa-birthday-cake"></i> Date de naissance</label>
+                    <input asp-for="Input.BirthDate" type="date" class="input-border form-control" placeholder="01/01/1990">
+                </div>
+
+                <div id="levelOfStudy" @(Model.Input != null && Model.Input.LevelOfStudy != null ? "" : "style=display:none")>
+                    <legend class="float-none w-auto text-warning fw-bold">Niveau d'étude maximum effectué</legend>
+                    <div class="form-group mb-5">
+                        <div class="btn-group-toggle d-xxl-flex" data-toggle="buttons">
+                            <label class="me-3" asp-for="Input.LevelOfStudy">
+                                <input type="radio" asp-for="Input.LevelOfStudy" value="CESS" autocomplete="off"> CESS
+                            </label>
+                            <label class="me-3" asp-for="Input.LevelOfStudy">
+                                <input type="radio" asp-for="Input.LevelOfStudy" value="Bachelier" autocomplete="off"> Bachelier
+                            </label>
+                            <label class="me-3" asp-for="Input.LevelOfStudy">
+                                <input type="radio" asp-for="Input.LevelOfStudy" value="Licencier" autocomplete="off"> Licencier
+                            </label>
+                        </div>
+                    </div>
+                    <span asp-validation-for="Input.LevelOfStudy" class="text-danger"></span>
+                </div>
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <button id="change-email-button" type="submit" asp-page-handler="ChangeEmail" class="w-100 btn btn-lg btn-warning fw-bold">Modifier</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"/>
+}

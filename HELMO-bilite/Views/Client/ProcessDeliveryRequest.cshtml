@@ -1,0 +1,71 @@
+﻿@model DeliveryModel
+
+@{
+    var isEditMode = Model.IdDelivery > 0;
+    ViewData["Title"] = isEditMode ? "Modifier une livraison": "Encoder une livraison";
+    var actionText = isEditMode ? "EditDeliveryRequestForm" : "CreatesDeliveryRequestForm";
+    var formAction = isEditMode ? "Modifier" : "Valider";
+}
+
+<div class="vw-100 d-flex justify-content-center align-items-center flex-column" style="height: 85%">
+    
+    <div class="w-50 form-shadow rounded">
+
+        <h2 class="m-5 text-center text-warning fw-bold">@ViewData["Title"]</h2>
+         @if (ViewData["ErrorIdDelivery"] != null)
+            {
+                <div class="alert alert-danger" role="alert">
+                    @ViewData["ErrorIdDelivery"]
+                </div>
+            }    
+        
+         <div class="w-100 d-flex justify-content-center align-items-center flex-column">
+             <form method="post" form asp-controller="Client" asp-action="@actionText" class="w-75 mb-2">
+
+                 <div class="form-group mb-5">
+                     <label asp-for="PlaceLoadingDelivery" class="form-label fw-bold"><i class="fa-solid fa-location-dot"></i> Lieu de chargement*</label>
+                     <input asp-for="PlaceLoadingDelivery" type="text" class="input-border form-control">
+                     <span asp-validation-for="PlaceLoadingDelivery" class="text-danger"></span>
+                 </div>
+
+                 <div class="form-group mb-5">
+                     <label asp-for="PlaceUnLoadingDeliver" class="form-label fw-bold"><i class="fa-solid fa-location-dot"></i> Lieu de déchargement*</label>
+                     <input asp-for="PlaceUnLoadingDeliver" type="text" class="input-border form-control" required>
+                     <span asp-validation-for="PlaceUnLoadingDeliver" class="text-danger"></span>
+                 </div>
+
+                 <div class="form-group mb-5">
+                     <label asp-for="Content" class="form-label fw-bold"><i class="fa-solid fa-box"></i> Contenu*</label>
+                     <input asp-for="Content" type="text" class="input-border form-control" required>
+                     <span asp-validation-for="Content" class="text-danger"></span>
+                 </div>
+
+                 <div class="d-xxl-flex justify-content-between align-items-center mb-5">
+                     <div class="form-group">
+                         <label asp-for="DateAndTimeOfLoading" class="form-label fw-bold"><i class="fa-solid fa-calendar-days"></i> Date/Heure de chargement*</label>
+                         <input asp-for="DateAndTimeOfLoading" type="datetime-local" class="input-border form-control" required value="@(isEditMode ? Model.DateAndTimeOfLoading.ToString("yyyy-MM-ddTHH:mm") : DateTime.Now.ToString("yyyy-MM-ddTHH:mm"))">
+                         <span asp-validation-for="DateAndTimeOfLoading" class="text-danger"></span>
+                     </div>
+                     
+                     <div class="form-group">
+                         <label asp-for="DateAndTimeOfUnLoading" class="form-label fw-bold"><i class="fa-solid fa-calendar-days"></i> Date/Heure déchargement espéré*</label>
+                         <input asp-for="DateAndTimeOfUnLoading" type="datetime-local" class="input-border form-control" required value="@(isEditMode ? Model.DateAndTimeOfUnLoading.ToString("yyyy-MM-ddTHH:mm") : DateTime.Now.ToString("yyyy-MM-ddTHH:mm"))">
+                         <span asp-validation-for="DateAndTimeOfUnLoading" class="text-danger"></span>
+                     </div>
+                 </div>
+                 
+                 @if (Model != null)
+                {
+                    <input type="hidden" asp-for="IdDelivery"  name="idDelivery">
+                }
+
+                 <div class="d-flex justify-content-center align-items-center mb-5">
+                     <button type="submit" class="btn btn-warning fw-bold">@formAction</button>
+                 </div>
+             </form>
+
+             <span class="text-danger fw-bold mb-3">@ViewData["ErrorDelivery"]</span>
+         </div>
+    </div>
+</div>
+

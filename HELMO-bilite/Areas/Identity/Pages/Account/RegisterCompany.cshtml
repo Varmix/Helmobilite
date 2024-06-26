@@ -1,0 +1,96 @@
+﻿@page
+@model RegisterCompany
+<h1>@ViewData["Title"]</h1>
+
+<div class="h-500 vw-100 d-flex justify-content-center align-items-center flex-column mb-3">
+    <div class="w-50 form-shadow rounded">
+        <h2 class="m-5 text-center text-warning fw-bold">Inscrpition en tant que <span class="bold">client</span></h2>
+
+        <div class="w-100 d-flex justify-content-center align-items-center flex-column">
+            <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="w-75 mb-2">
+                <div class="form-group mb-5">
+                    <label asp-for="Input.Email" class="form-label fw-bold"><i class="fa-solid fa-envelope"></i> Adresse email</label>
+                    <input asp-for="Input.Email" type="email" class="input-border form-control" aria-describedby="emailHelp" placeholder="john.doe@gmail.com" autocomplete="username" aria-required="true"/>
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="w-100 d-xxl-flex justify-content-between align-items-center">
+                    <div class="form-group mb-5" style="width: 40%">
+                        <label asp-for="Input.Password" class="form-label fw-bold"><i class="fa-solid fa-key"></i> Mot de passe</label>
+                        <input asp-for="Input.Password" type="password" class="input-border form-control" autocomplete="new-password" placeholder="●●●●●●●●●●●●" aria-required="true"/>
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-5" style="width: 40%">
+                        <label asp-for="Input.ConfirmPassword" class="form-label fw-bold"><i class="fa-solid fa-key"></i> Confirmer mot de passe</label>
+                        <input asp-for="Input.ConfirmPassword" type="password" class="input-border form-control" autocomplete="new-password" placeholder="●●●●●●●●●●●●" aria-required="true"/>
+                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                    </div>
+                </div>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                
+                
+                <!--DEBUT DE LA PARTIE PROPRE A LA COMPANY-->
+                <legend class="float-none w-auto text-warning fw-bold">Informations de l'entreprise</legend>
+                <div class="form-group mb-5">
+                    <label asp-for="Input.NumberCompany" class="form-label fw-bold"><i class="fa-solid fa-id-card"></i> Numéro d'entreprise</label>
+                    <input asp-for="Input.NumberCompany" type="text" class="input-border form-control" placeholder="0123456789" required>
+                    <span asp-validation-for="Input.NumberCompany" class="text-danger"></span>
+                </div>
+                
+                <div class="form-group mb-5">
+                    <label asp-for="Input.CompanyName" class="form-label fw-bold"><i class="fa-solid fa-building"></i> Nom de l'entreprise</label>
+                    <input asp-for="Input.CompanyName" type="text" class="input-border form-control" placeholder="S.A.R.L Truck" required>
+                    <span asp-validation-for="Input.CompanyName" class="text-danger"></span>
+                </div>
+                
+                <div class="form-group mb-5">
+                    <label asp-for="Input.Country" class="form-label fw-bold"><i class="fa-solid fa-flag"></i> Pays</label>
+                    <input asp-for="Input.Country" type="text" class="input-border form-control" placeholder="Belgique" required>
+                    <span asp-validation-for="Input.Country" class="text-danger"></span>
+                </div>
+                
+                
+                <div class="d-xxl-flex justify-content-between align-items-center">
+                    <div class="form-group mb-5" style="width: 40%">
+                        <label asp-for="Input.Number" class="form-label fw-bold"><i class="fa-solid fa-home"></i> Numéro de rue</label>
+                        <input asp-for="Input.Number" type="text" class="input-border form-control" placeholder="35" required>
+                        <span asp-validation-for="Input.Number" class="text-danger"></span>
+                    </div>
+                
+                
+                    <div class="form-group mb-5" style="width: 40%">
+                        <label asp-for="Input.Street" class="form-label fw-bold"><i class="fa-solid fa-road"></i> Rue</label>
+                        <input asp-for="Input.Street" type="text" class="input-border form-control" placeholder="Rue de Harlez" required>
+                        <span asp-validation-for="Input.Street" class="text-danger"></span>
+                    </div>
+                
+                </div>
+                
+                <div class="d-xxl-flex justify-content-between align-items-center">
+                    <div class="form-group mb-5" style="width: 40%">
+                        <label asp-for="Input.PostalCode" class="form-label fw-bold"><i class="fa-solid fa-map-marker"></i> Code postal</label>
+                        <input asp-for="Input.PostalCode" type="number" class="input-border form-control" placeholder="4000" required>
+                        <span asp-validation-for="Input.PostalCode" class="text-danger"></span>
+                    </div>
+                
+                    <div class="form-group mb-5" style="width: 40%">
+                        <label asp-for="Input.Locality" class="form-label fw-bold"><i class="fa-solid fa-city"></i> Ville</label>
+                        <input asp-for="Input.Locality" type="text" class="input-border form-control" placeholder="Liège" required>
+                        <span asp-validation-for="Input.Locality" class="text-danger"></span>
+                    </div>
+                </div>
+                <!--FIN DE LA PARTIE PROPRE A LA COMPANY-->
+                
+                
+                <div class="d-flex justify-content-center align-items-center mb-3">
+                    <button id="registerSubmit" type="submit" class="btn btn-warning fw-bold">S'inscrire</button>
+                </div>
+            </form>
+            <!-- Gestion des erreurs pour les informations client -->
+            <span class="text-danger fw-bold mb-3">@ViewData["ErrorLogin"]</span>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"/>
+}

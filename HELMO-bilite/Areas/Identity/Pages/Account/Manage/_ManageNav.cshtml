@@ -1,0 +1,23 @@
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using HELMO_bilite.Models
+@inject SignInManager<User> SignInManager
+@{
+    var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
+}
+<ul class="nav flex-column">
+    @if (User.IsInRole("Client"))
+    {
+        <li class="nav-item"><a class="nav-link @ManageNavPages.EmailNavClass(ViewContext) fw-bold" id="email" asp-page="./Email">Modifier votre profil</a></li>
+    }
+    else
+    {
+        <li class="nav-item"><a class="nav-link @ManageNavPages.EmailNavClass(ViewContext) fw-bold" id="email" asp-page="./EditMemberHelmo">Modifier votre profil</a></li>
+    }
+    <li class="nav-item"><a class="nav-link @ManageNavPages.ChangePasswordNavClass(ViewContext) fw-bold" id="change-password" asp-page="./ChangePassword">Modifier votre mot de passe</a></li>
+    @if (hasExternalLogins)
+    {
+        <li id="external-logins" class="nav-item"><a id="external-login" class="nav-link @ManageNavPages.ExternalLoginsNavClass(ViewContext)" asp-page="./ExternalLogins">External logins</a></li>
+    }
+    @* $1$ <li class="nav-item"><a class="nav-link @ManageNavPages.TwoFactorAuthenticationNavClass(ViewContext)" id="two-factor" asp-page="./TwoFactorAuthentication">Two-factor authentication</a></li> #1# *@
+    @* <li class="nav-item"><a class="nav-link @ManageNavPages.PersonalDataNavClass(ViewContext) fw-bold" id="personal-data" asp-page="./PersonalData">Vos données personnelles</a></li> *@
+</ul>

@@ -1,0 +1,92 @@
+﻿@model HELMO_bilite.Models.ViewModels.MemberPersonViewModel
+
+ @if (Model.Dispatchers.Count == 0 && Model.TruckDrivers.Count == 0)
+    {
+        <div class="d-flex align-items-center justify-content-center h-100 flex-column">
+            <p class="fs-3"> <span class="text-warning fw-bold fs-5">Opps!</span></p>
+            <p class="lead mb-5">
+                Il semblerait que vous n'ayez pas de membres pour le moment...
+            </p>
+        </div>
+    }
+    
+    else
+    {
+        <h1 class="fw-bold mt-5 ms-5">Gestion des permis</h1>
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+        }
+
+        <div class="h-100 w-100 p-5">
+            <table class="table table-striped table-bordered border-5">
+                    <thead class="bg-warning">
+                        <tr>
+                            <th scope="col"><i class="fa-solid fa-hashtag"></i></th>
+                            <th scope="col"><i class="fas fa-barcode"></i>  Matricule</th>
+                            <th scope="col"><i class="fas fa-user"></i> Nom</th>
+                            <th scope="col"><i class="fas fa-user"></i> Prénom</th>
+                            <th scope="col"><i class="fas fa-id-card"></i> Permis</th>
+                            <th scope="col" class="text-center align-middle"><i class="fa-solid fa-check fa-lg"></i></th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                    @foreach (var truckDriver in Model.TruckDrivers)
+                    {
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>@Html.DisplayFor(modelItem => truckDriver.Matricule)</td>
+                            <td>@Html.DisplayFor(modelItem => truckDriver.LastName)</td>
+                            <td>@Html.DisplayFor(modelItem => truckDriver.FirstName)</td>
+
+                            <form method="post" form asp-controller="Admin" asp-action="ProcessChangeDrivingLicenceType">
+                                <td class="me-3">
+                                    <label>
+                                        @if (truckDriver.Permis == TypeDrivingLicences.B)
+                                        {
+                                            <input type="checkbox" name="drivingLicenceB" value="B" checked>
+                                        }
+                                        else
+                                        {
+                                            <input type="checkbox" name="drivingLicenceB" value="B">
+                                        }
+                                        Permis B
+                                    </label>
+                                    <br>
+                                    <label>
+                                        @if (truckDriver.Permis == TypeDrivingLicences.C)
+                                        {
+                                            <input type="checkbox" name="drivingLicenceC" value="C" checked>
+                                        }
+                                        else
+                                        {
+                                            <input type="checkbox" name="drivingLicenceC" value="C">
+                                        }
+                                        Permis C
+                                    </label>
+                                    <br>
+                                    <label>
+                                          @if (truckDriver.Permis == TypeDrivingLicences.CE)
+                                          {
+                                              <input type="checkbox" name="drivingLicenceCE" value="CE" checked="">
+                                          }
+                                          else
+                                          {
+                                              <input type="checkbox" name="drivingLicenceCE" value="CE">  
+                                          }
+                                          Permis CE
+                                    </label>
+                                </td>
+
+                                <td class="text-center"><button type="submit" class="btn btn-warning fw-bold">Valider</button></td>
+                                <input type="hidden" name="memberId" value="@truckDriver.Id"/>
+                            </form>
+                        </tr>
+                    }
+                    </tbody>
+                    
+                </table>
+            </div>
+        
+    }

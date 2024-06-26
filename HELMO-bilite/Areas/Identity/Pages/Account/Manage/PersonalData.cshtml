@@ -1,0 +1,28 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model PersonalDataModel
+@{
+    ViewData["Title"] = "Vos données personnelles";
+    ViewData["ActivePage"] = ManageNavPages.PersonalData;
+}
+
+<h3>@ViewData["Title"]</h3>
+
+<div class="row">
+    <div class="col-md-6">
+        <p>Votre compte contient des données personnelles que vous nous avez fournies. Cette page vous permet de télécharger ou de supprimer ces données.</p>
+        <p>
+            <strong>La suppression de ces données supprimera définitivement votre compte, et celui-ci ne pourra pas être récupéré.</strong>
+        </p>
+        <form class="w-50 mb-1" id="download-data" asp-page="DownloadPersonalData" method="post">
+            <button class="btn btn-warning fw-bold w-100" type="submit">Télécharger</button>
+        </form>
+        <p class="w-50">
+            <a id="delete" asp-page="DeletePersonalData" class="btn btn-danger w-100">Supprimer <span class="fw-bold">(permanent)</span></a>
+        </p>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
